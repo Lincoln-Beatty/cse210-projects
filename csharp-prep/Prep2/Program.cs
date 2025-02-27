@@ -22,7 +22,7 @@ class Program{
             else{
                 letter_grade = "invalid";
             }
-            Console.WriteLine($"You passed with a {letter_grade!}");
+            Console.WriteLine($"You passed with a {letter_grade}!");
         }
         else{
             if (number >= 60)
@@ -33,7 +33,7 @@ class Program{
             {
                 letter_grade = "F";
             }
-            Console.WriteLine($"You failed with a {letter_grade}");
+            Console.WriteLine($"You failed with a {letter_grade}.");
         }
     }
 }
