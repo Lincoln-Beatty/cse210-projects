@@ -1,5 +1,6 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
+using System.Xml.Serialization; 
 
 class Program{
     static void Main(string[] args){
@@ -19,24 +20,5 @@ class Program{
         resume1._person_name = "Lincoln Beatty";
         resume1.display_resume();
     }
-    public class Resume{
-        public string _person_name = "";
-        public List<Job> _jobs = new List<Job>();
-        public void display_resume(){
-            Console.WriteLine($"Name: {_person_name}");
-            Console.WriteLine("Jobs:");
-            foreach (Job job in _jobs){
-                job.display_job_information();
-            }
-        }
-    }
-    public class Job{
-        public string _company = "";
-        public string _job_title = "";
-        public int _start_year;
-        public int _end_year;
-        public void display_job_information(){
-            Console.WriteLine($"{_job_title} ({_company}) {_start_year}-{_end_year}");
-        }
-    }
+    
 }
