@@ -32,7 +32,7 @@ class Program{
         }else if(user_choice == 6){
             done = true;
         }
-        }while (done != true);
+        }while (!done);
     }
     
 }
@@ -72,6 +72,7 @@ public class CertainEntry{
         }
 
         bool found = false;
+        Console.WriteLine("---Journal Entries for that day---");
         foreach (var entry in dictionary)
         {
             if (entry._key == formattedDate)
